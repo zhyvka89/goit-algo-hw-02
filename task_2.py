@@ -18,11 +18,11 @@ def is_polindrome(string):
   while len(d) > 1:
     first_char = d.popleft()
     last_char = d.pop()
-
-    if  first_char == last_char:
-      return f'{string} - is polindrome!'
     
-  return f'{string} - is NOT polindrome!'
+    if  first_char != last_char:
+      return f'{string} - is NOT polindrome!'
+    
+  return f'{string} - is polindrome!'
 
 
 def main():
